@@ -7,10 +7,19 @@ development:
       options:
         log_level: :warn
 
+
+production: 
+  clients:
+    default:
+      uri: <%= ENV['DB_URL'] %>
+      options: 
+        log_level: :warn
+
 test:
   clients:
     default:
-      # Test database settings.
-      uri: mongodb://localhost:27017/sample_geospatial_test
+      # Use the environment variable DB_URL for the MongoDB connection URL.
+      # If the environment variable is not set, it defaults to localhost.
+      uri: <%= ENV['DB_URL'] %>
       options:
         log_level: :warn
