@@ -35,4 +35,7 @@
 
 client/
 
+dockerbuild.sh
+
+
 README.md
