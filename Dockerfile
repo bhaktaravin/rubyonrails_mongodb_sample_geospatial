@@ -75,4 +75,4 @@ EXPOSE 32090
 
 
 
-CMD ["./bin/thrust", "./bin/rails", "server"]
+CMD ["./bin/thrust", "./bin/rails", "server", "-p", "4000"]
