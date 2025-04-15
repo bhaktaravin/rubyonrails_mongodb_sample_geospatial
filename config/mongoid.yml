@@ -1,0 +1,16 @@
+development:
+  clients:
+    default:
+      # Use the environment variable DB_URL for the MongoDB connection URL.
+      # If the environment variable is not set, it defaults to localhost.
+      uri: "mongodb+srv://root:GftJKZ2rlsJlk9DR@cluster0.6rjyw.mongodb.net/sample_geospatial?authSource=admin&replicaSet=atlas-l540kb-shard-0&readPreference=primary&ssl=true"
+      options:
+        log_level: :warn
+
+test:
+  clients:
+    default:
+      # Test database settings.
+      uri: mongodb://localhost:27017/sample_geospatial_test
+      options:
+        log_level: :warn
