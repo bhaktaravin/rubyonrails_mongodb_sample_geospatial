@@ -3,7 +3,7 @@ development:
     default:
       # Use the environment variable DB_URL for the MongoDB connection URL.
       # If the environment variable is not set, it defaults to localhost.
-      uri: "mongodb+srv://root:GftJKZ2rlsJlk9DR@cluster0.6rjyw.mongodb.net/sample_geospatial?authSource=admin&replicaSet=atlas-l540kb-shard-0&readPreference=primary&ssl=true"
+      uri: <%= ENV['DB_URL'] %>
       options:
         log_level: :warn
 
