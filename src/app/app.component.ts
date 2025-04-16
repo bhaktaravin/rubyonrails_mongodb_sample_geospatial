@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { MapboxComponent } from './mapbox/mapbox.component';
+import { TableviewComponent } from './tableview/tableview.component';
 
 @Component({
   selector: 'app-root',
-  imports: [MapboxComponent],
+  imports: [TableviewComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
