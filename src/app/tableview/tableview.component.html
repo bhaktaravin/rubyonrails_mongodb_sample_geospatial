@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Type</th>
+      <th>Coordinates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of shipwrecks">
+      <td>{{ item._id }}</td>
+      <td>{{ item.feature_type }}</td>
+      <td>{{ item.coordinates }} </td>
+    </tr>
+  </tbody>
+</table>
