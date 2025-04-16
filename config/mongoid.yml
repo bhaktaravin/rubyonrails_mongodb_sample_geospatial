@@ -1,0 +1,25 @@
+development:
+  clients:
+    default:
+      # Use the environment variable DB_URL for the MongoDB connection URL.
+      # If the environment variable is not set, it defaults to localhost.
+      uri: <%= ENV['DB_URL'] %>
+      options:
+        log_level: :warn
+
+
+production: 
+  clients:
+    default:
+      uri: <%= ENV['DB_URL'] %>
+      options: 
+        log_level: :warn
+
+test:
+  clients:
+    default:
+      # Use the environment variable DB_URL for the MongoDB connection URL.
+      # If the environment variable is not set, it defaults to localhost.
+      uri: <%= ENV['DB_URL'] %>
+      options:
+        log_level: :warn
